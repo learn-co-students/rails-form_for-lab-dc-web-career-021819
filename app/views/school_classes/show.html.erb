@@ -1,0 +1,10 @@
+<h1>Detial page for <%= @school_class.title %></h1>
+
+<h2>Title: <%= @school_class.title %></h2>
+
+<%= form_tag @school_class, method: "DELETE" do %>
+    <%= submit_tag "Delete" %>
+<% end %>
+
+<%= link_to "Edit", edit_school_class_path %>
+<%= link_to "School Class Index Page", school_classes_path %>
